@@ -48,8 +48,19 @@ public class Product implements Cloneable {
 
 
     @Override
-    public Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    public Product clone() throws CloneNotSupportedException {
+        // change also the returned object, now it isn't needed the cast in class Main
+        // fix clone for category, I miss that at class
+
+        Product newObject = (Product)super.clone();
+        if(this.category != null) {
+            try {
+                newObject.setCategory((Category) this.category.clone());
+            } catch (CloneNotSupportedException exc) {
+                exc.printStackTrace();
+            }
+        }
+        return newObject;
     }
 
     @Override
