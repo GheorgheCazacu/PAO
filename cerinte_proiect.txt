@@ -1,0 +1,64 @@
+Proiect grupele 232, 234
+
+Fiecare student va lucra la un proiect individual. Proiectul este structurat în mai multe etape. 
+Condiția de punctare a proiectelor este aceea ca acestea să nu prezinte erori de compilare și să implementeze cerințele date. 
+Codul aplicatiei va fi transmis pe Github pana la termenul de predare. Va trebui sa va faceti conturi si sa imi transmiteti
+detaliile lor.
+
+Terme de predare:
+Etapa I: (github - 24.03.2019, discutie in laborator - 26.03.2019)
+Etapa II: (github - 05.05.2019, laborator - 06.05.2019)
+Etapa III: (penultima si ultima saptamana din semestru)
+
+Pentru orice informație suplimentară sau neclarități: gheorghe.cazacu@endava.com
+
+
+Etapa I:
+1. Definirea sistemului: 
+	- sa se creeze o lista pe baza temei alese cu cel puțin 10 acțiuni/interogări care se pot face în cadrul sistemului 
+  și o lista cu cel puțin 8 tipuri de obiecte. 
+2. Implementare: sa se implementeze în limbajul Java o aplicație pe baza celor definite la punctul 1. Aplicația va conține: 
+	- clase simple cu atribute private / protected și metode de acces
+	- cel puțin doua colecții diferite capabile să gestioneze obiectele definite anterior (List, Set, Map, etc.) 
+  dintre care cel puțin una sa fie sortata.
+	- utilizare moștenire pentru crearea de clase adiționale și utilizarea lor în cadrul colecțiilor;
+	- cel puțin o clasa serviciu care sa expună operațiile 
+	- o clasa main din care sunt făcute apeluri către servicii 
+		
+	
+Etapa II:
+1. Extindeți proiectul din prima etapa prin realizarea persistentei utilizând fișiere.
+se vor realiza fișiere de tip csv pentru cel puțin 4 dintre clasele definite in prima etapa
+	- se vor realiza servicii generice pentru scrierea și citirea din fișiere
+	- la pornirea programului se vor încărca datele din fișiere utilizând serviciile
+2. Realizarea unui serviciu de audit
+	- se va realiza un serviciu care sa scrie într-un fișier de tip CSV de fiecare data când este executata una 
+  dintre acțiunile descrise in prima etapa. Structura fișierului: nume_actiune, timestamp
+
+
+Etapa III:
+1. Înlocuiți serviciile realizate în etapa a II-a cu servicii care sa asigure persistenta utilizând baza de date folosind JDBC.
+	- sa se realizeze servicii care sa expună operații de tip create, read, update, delete (CRUD)pentru cel puțin 4 
+  dintre clasele definite 
+  
+2. Sa se realizeze o interfață grafica în care sa fie expuse cel puțin 5 dintre acțiunile definite inițial. 
+Interfața va avea cel puțin 2 ecrane diferite care sa permită navigarea intre ele. 
+Se va utiliza Swing sau JSP pentru realizarea interfeței grafice. 		
+Utilizarea altor framework-uri în afara celor menționate mai sus trebuie discutata în prealabil cu mine.
+
+3. Se va adăuga în fișierul exportat de serviciul de audit încă o coloana: thread_name
+	
+
+Teme sugerate:
+1. structura unei organizații (angajați, relații ierarhice, salarii)
+2. o agendă personală (categorii, întâlniri, sarcini)
+3. activitatea unei companii de transport (orașe, legături, mașini, rute)
+4. credite (client, credit, rate)
+5. cabinet medical (pacienți, medici, rețete)
+6. admitere (candidat, facultate, examen)
+7. vanzare de bilete online(client, eveniment, locatie)
+8. software casa de marcat(metoda de plata, client, produs)
+9. rezervare loc în sala de spectacol (spectacol, loc, client)
+10. activitatea unei case de schimb valutar (valute, istoric curs, clienți, tranzacții)
+11. sistem de gestiune fișiere (utilizatori, tip fisier, grup, tip utilizator)
+12. oricare alta idee este binevenita :-)
