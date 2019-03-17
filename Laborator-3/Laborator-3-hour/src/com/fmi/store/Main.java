@@ -22,6 +22,14 @@ public class Main {
 
         Product foodProduct = new FoodProduct(category, null,
                 "food product name", "food product description");
+        int counter = 1;
+        while(counter <  1000){
+            try {
+                Thread.sleep(1000);
+            }catch (InterruptedException exc) {
+                exc.printStackTrace();
+            }
+        }
 
         System.out.println("product getName : " + product.getName());
         System.out.println("foodProduct getName : " + foodProduct.getName());
