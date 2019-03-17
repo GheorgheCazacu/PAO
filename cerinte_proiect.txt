@@ -6,7 +6,7 @@ Codul aplicatiei va fi transmis pe Github pana la termenul de predare. Va trebui
 detaliile lor.
 
 Terme de predare:
-Etapa I: (github - 24.03.2019, discutie in laborator - 25.03.2019)
+Etapa I: (github - 24.03.2019, discutie in laborator - 25.03.2019) sau (github - 31.03.2019, discutie in laborator - 01.04.2019) ???
 Etapa II: (github - 05.05.2019, laborator - 06.05.2019)
 Etapa III: (penultima si ultima saptamana din semestru)
 
@@ -20,7 +20,7 @@ Etapa I:
 2. Implementare: sa se implementeze în limbajul Java o aplicație pe baza celor definite la punctul 1. Aplicația va conține: 
 	- clase simple cu atribute private / protected și metode de acces
 	- cel puțin doua colecții diferite capabile să gestioneze obiectele definite anterior (List, Set, Map, etc.) 
-  dintre care cel puțin una sa fie sortata.
+  dintre care cel puțin una sa fie sortata. (cerinta aceasta ramane pentru etapa a II a)
 	- utilizare moștenire pentru crearea de clase adiționale și utilizarea lor în cadrul colecțiilor;
 	- cel puțin o clasa serviciu care sa expună operațiile 
 	- o clasa main din care sunt făcute apeluri către servicii 
