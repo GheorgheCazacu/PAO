@@ -6,7 +6,7 @@ Codul aplicatiei va fi transmis pe Github pana la termenul de predare. Va trebui
 detaliile lor.
 
 Terme de predare:
-Etapa I: (github - 24.03.2019, discutie in laborator - 26.03.2019)
+Etapa I: (github - 24.03.2019, discutie in laborator - 25.03.2019)
 Etapa II: (github - 05.05.2019, laborator - 06.05.2019)
 Etapa III: (penultima si ultima saptamana din semestru)
 
