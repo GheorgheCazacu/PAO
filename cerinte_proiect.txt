@@ -6,7 +6,7 @@ Codul aplicatiei va fi transmis pe Github pana la termenul de predare. Va trebui
 detaliile lor.
 
 Terme de predare:
-Etapa I: (github - 24.03.2019, discutie in laborator - 25.03.2019) sau (github - 31.03.2019, discutie in laborator - 01.04.2019) ???
+Etapa I: (github - 31.03.2019, discutie in laborator - 01.04.2019) 
 Etapa II: (github - 05.05.2019, laborator - 06.05.2019)
 Etapa III: (penultima si ultima saptamana din semestru)
 
@@ -62,4 +62,4 @@ Teme sugerate:
 9. rezervare loc în sala de spectacol (spectacol, loc, client)
 10. activitatea unei case de schimb valutar (valute, istoric curs, clienți, tranzacții)
 11. sistem de gestiune fișiere (utilizatori, tip fisier, grup, tip utilizator)
-12. oricare alta idee este binevenita :-)
+12. oricare alta idee este binevenita 
