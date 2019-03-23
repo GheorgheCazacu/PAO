@@ -59,7 +59,10 @@ Teme sugerate:
 6. admitere (candidat, facultate, examen)
 7. vanzare de bilete online(client, eveniment, locatie)
 8. software casa de marcat(metoda de plata, client, produs)
-9. rezervare loc în sala de spectacol (spectacol, loc, client)
+9. rezervare loc în sala de spectacol (spectacol, loc, client, actori)
 10. activitatea unei case de schimb valutar (valute, istoric curs, clienți, tranzacții)
 11. sistem de gestiune fișiere (utilizatori, tip fisier, grup, tip utilizator)
-12. oricare alta idee este binevenita 
+12. sistem de gestiune a unei administratii de bloc ( locatari, administrator, comitet de bloc, servicii de curatenie, de gunoi etc)
+13. sistem de gestiune a unui magazin (produse, furnizori, bonuri facturi, furnizori-utilizatori ce pot verifica cat au de incasat etc)
+14. serviciu de inchiriat biciclete ( stoc biciclete, utilizatori, rezervari online, locatii de ridicare/predare etc)
+15. oricare alta idee este binevenita 
