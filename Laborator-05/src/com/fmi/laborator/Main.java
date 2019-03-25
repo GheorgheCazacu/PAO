@@ -1,7 +1,9 @@
 package com.fmi.laborator;
 
+import com.fmi.laborator.customer.Customer;
 import com.fmi.laborator.geometric.Triangle;
 import com.fmi.laborator.geometric.TriangleScalene;
+import com.fmi.laborator.services.UserService;
 
 public class Main {
 
@@ -13,6 +15,8 @@ public class Main {
         System.out.println("area: " + triangle.getArea());
         System.out.println("perimeter: " + triangle.getPerimeter());
 
+
+        UserService.getInstance().isAuth(new Customer());
 
     }
 }
