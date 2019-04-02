@@ -6,3 +6,5 @@ important stuff:
    * code style, https://google.github.io/styleguide/javaguide.html#s4-formatting  
   
 reasoning, https://bjurr.com/java-code-formatting-with-google-java-format/  
+  
+IntelliJ shortcuts, https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf  
