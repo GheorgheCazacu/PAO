@@ -14,3 +14,5 @@ Terme de predare tema:
 Etapa I: (github - 31.03.2019, discutie in laborator - 01.04.2019)  
 Etapa II: (github - 05.05.2019, laborator - 06.05.2019)  
 Etapa III: (penultima si ultima saptamana din semestru)  
+  
+Deocamdata pentru etapa I sunt 20 de teme predate dintr-un total de 55
