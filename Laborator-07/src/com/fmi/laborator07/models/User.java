@@ -1,8 +1,9 @@
 package com.fmi.laborator07.models;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class User {
+public class User implements Serializable {
     private String name;
     private Date dateOfBirth;
     private String hashPassword;
@@ -35,5 +36,14 @@ public class User {
 
     public void setHashPassword(String hashPassword) {
         this.hashPassword = hashPassword;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", hashPassword='" + hashPassword + '\'' +
+                '}';
     }
 }
