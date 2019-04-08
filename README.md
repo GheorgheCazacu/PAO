@@ -17,11 +17,11 @@ Etapa III: (penultima si ultima saptamana din semestru)
   
 Deocamdata pentru etapa I sunt 20 de teme predate dintr-un total de 55
   
+
 '''java
-  
         Calendar calendar = Calendar.getInstance();  
         calendar.set(1980, 0, 20);  
 
         Date date = calendar.getTime();  
         System.out.println(date);  
-'''
+ '''
