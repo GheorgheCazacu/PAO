@@ -1,6 +1,7 @@
 package com.fmi.laborator08;
 
 import com.fmi.laborator08.model.Employee;
+import com.fmi.laborator08.model.Grade;
 import com.fmi.laborator08.model.Priority;
 import com.fmi.laborator08.model.Task;
 
@@ -11,6 +12,19 @@ public class Main {
     public static void main(String[] args) {
 
 
+        List<Employee> employees = new LinkedList<>();
+
+        long start = (new Date()).getTime();
+
+        for(int i = 0; i < 1_00_0_00_0; i++) {
+
+            employees.add(new Employee("username" + i, "pass",
+                    new Long(i), "name", Grade.Medium));
+
+        }
+
+        System.out.println("time spent: " + ((new Date()).getTime() - start));
+
 
     }
 
@@ -18,6 +32,7 @@ public class Main {
     public static void doStuffMap() {
 
         Map<String, Integer> hashMap = new LinkedHashMap<>();
+
 
         String inputText = "ala bala portocala a2t lol34 like " +
                 "light locos 23 55 1 af";
