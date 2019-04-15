@@ -2,7 +2,7 @@ package com.fmi.laborator08.model;
 
 import java.util.Objects;
 
-public class Task {
+public class Task implements Comparable<Task>{
 
     private String name;
     private double timeEstimation;
@@ -45,5 +45,23 @@ public class Task {
                 ", timeEstimation=" + timeEstimation +
                 ", priority=" + priority +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Task o) {
+        return this.name.compareTo(o.getName());
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Task task = (Task) o;
+        return Objects.equals(name, task.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
     }
 }

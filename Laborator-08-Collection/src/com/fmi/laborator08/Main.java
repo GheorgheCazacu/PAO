@@ -12,6 +12,81 @@ public class Main {
     public static void main(String[] args) {
 
 
+//        Map<String, Task> tasks = new TreeMap<>();
+//
+//        Random random = new Random(22);
+//
+//        for(int i = 0; i < 10; i++) {
+//            double timeEstimation = 40 * random.nextDouble();
+//            Task task = new Task("name" + i, timeEstimation, Priority.LOW);
+//            tasks.put( "name" + i, task);
+//        }
+//
+//        for (String key : tasks.keySet()) {
+//            System.out.println(tasks.get(key));
+//        }
+
+        Set<Task> taskSet = new HashSet<>();
+        taskSet.add(new Task("name 2", 3, Priority.LOW));
+        System.out.println(taskSet.add(new Task("name 2", 3, Priority.LOW)));
+        taskSet.add(new Task("name 4", 3, Priority.LOW));
+
+        taskSet.stream().forEach(System.out::println);
+
+
+
+    }
+
+    public static void doStuffLists01() {
+
+
+        List<Task> tasks = new ArrayList<>();
+
+        Random random = new Random(22);
+
+        for(int i = 0; i < 10; i++) {
+            double timeEstimation = 40 * random.nextDouble();
+            Task task = new Task("name" + i, timeEstimation, Priority.LOW);
+            tasks.add(task);
+        }
+
+        tasks.get(2).setPriority(Priority.CRITICAL);
+        tasks.get(4).setPriority(Priority.HIGH);
+        tasks.get(5).setPriority(Priority.LOW);
+        tasks.get(7).setPriority(Priority.MEDIUM);
+        tasks.get(9).setPriority(Priority.CRITICAL);
+
+        for (Task t : tasks) {
+            System.out.println(t);
+        }
+
+        Comparator<Task> taskComparator = new Comparator<Task>() {
+            @Override
+            public int compare(Task o1, Task o2) {
+                int result = o1.getPriority().getPriorityVal() - o2.getPriority().getPriorityVal();
+
+                if (result == 0) {
+                    result = (int) (o1.getTimeEstimation() - o2.getTimeEstimation());
+                }
+                return result;
+            }
+        };
+
+        Collections.sort(tasks, taskComparator);
+        System.out.println("==============");
+
+        tasks.stream().forEach(System.out::println);
+
+
+        for (Task t : tasks) {
+            System.out.println(t);
+        }
+
+    }
+
+
+    public static void doStuffLinkedLists() {
+
         List<Employee> employees = new LinkedList<>();
 
         long start = (new Date()).getTime();
@@ -24,7 +99,6 @@ public class Main {
         }
 
         System.out.println("time spent: " + ((new Date()).getTime() - start));
-
 
     }
 
