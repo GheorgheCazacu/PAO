@@ -24,4 +24,8 @@ Initializarea unei valori de tipu Date. LocalDate este mai util in viitor. Lunil
         calendar.set(1980, 0, 20);  
         Date date = calendar.getTime();  
         System.out.println(date); 
-
+  
+  
+Instalarea unui server local de baza de date Postgresql (o sa ne fie util in tratarea conexiunilor la o baza de date)
+link:
+https://www.youtube.com/watch?v=DhHjMoVQQwk
