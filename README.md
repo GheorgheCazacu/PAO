@@ -31,3 +31,7 @@ link catre kit:
 https://www.bigsql.org/postgresql/installers/  
 link catre un videoclip cu detalii despre instalare.  
 https://www.youtube.com/watch?v=DhHjMoVQQwk
+  
+Un alt tool foarte util este:  
+http://squirrel-sql.sourceforge.net  
+"veverita"
