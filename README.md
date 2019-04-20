@@ -26,6 +26,8 @@ Initializarea unei valori de tipu Date. LocalDate este mai util in viitor. Lunil
         System.out.println(date); 
   
   
-Instalarea unui server local de baza de date Postgresql (o sa ne fie util in tratarea conexiunilor la o baza de date)
-link:
+Instalarea unui server local de baza de date Postgresql (o sa ne fie util in tratarea conexiunilor la o baza de date)  
+link catre kit:  
+https://www.bigsql.org/postgresql/installers/
+link catre un videoclip cu detalii despre instalare.  
 https://www.youtube.com/watch?v=DhHjMoVQQwk
