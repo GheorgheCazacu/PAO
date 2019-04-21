@@ -11,7 +11,7 @@ public class User {
     private Date dateOfBirth;
     private String cnp;
 
-    private static final SimpleDateFormat SIMPLE_DATE_FORMAT = new SimpleDateFormat("yyyy-MMM-dd");
+    public static final SimpleDateFormat SIMPLE_DATE_FORMAT = new SimpleDateFormat("yyyy-MMM-dd");
 
 
     public User(Integer id, String username, String name, Date dateOfBirth, String cnp) {

@@ -1,8 +1,10 @@
 package com.fmi.laborator09.fx.services;
 
+import com.fmi.laborator09.fx.exceptions.UserBuildException;
 import com.fmi.laborator09.fx.exceptions.YearException;
 import com.fmi.laborator09.fx.models.User;
 
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -71,6 +73,47 @@ public class UserService {
         result = new User(RANDOM.nextInt(500_000), username, name, dateOfBirth, cnp);
 
         return result;
+    }
+
+    /**
+     * build an user from a string with format
+     * date format is a constant in <strong>User</strong> class
+     * 22,username,first last,2000-03-22,1234567890123
+     * @param line
+     * @return
+     */
+    public User buildUserFromString(String line) throws UserBuildException{
+        if (line == null) {
+            throw new UserBuildException("input line parameter is null");
+        }
+
+        User user = null;
+        String[] fields = line.split(",");
+
+        if(fields.length != 5) {
+            throw new UserBuildException("too many or too few fields are available on this line: " + line);
+        }
+
+        int id = 0;
+        try {
+            id = Integer.parseInt(fields[0].trim());
+        } catch (NumberFormatException exc) {
+            exc.printStackTrace();
+        }
+
+        String username = fields[1].trim();
+        String name = fields[2].trim();
+        Date dateOfBirth = null;
+        try {
+            dateOfBirth = User.SIMPLE_DATE_FORMAT.parse(fields[3].trim());
+        } catch (ParseException exc) {
+            exc.printStackTrace();
+        }
+        String cnp = fields[4].trim();
+
+        user = new User(id, username, name, dateOfBirth, cnp);
+
+        return user;
     }
 
 }
