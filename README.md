@@ -32,6 +32,12 @@ https://www.bigsql.org/postgresql/installers/
 link catre un videoclip cu detalii despre instalare.  
 https://www.youtube.com/watch?v=DhHjMoVQQwk
   
+O alta optiune pentru baza de date este MySQL:  
+https://dev.mysql.com/downloads/installer/.  
+pentru mySQL exista de asemenea un tool foarte util:  
+https://www.mysql.com/products/workbench/  
+
+
 Un alt tool foarte util este:  
 http://squirrel-sql.sourceforge.net  
 "veverita"
