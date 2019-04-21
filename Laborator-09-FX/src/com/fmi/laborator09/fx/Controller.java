@@ -13,6 +13,9 @@ import javafx.scene.control.*;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
 import javafx.stage.FileChooser;
 import javafx.stage.Window;
 
@@ -29,6 +32,7 @@ public class Controller {
     @FXML private Label taskLabel;
     @FXML private TableView<User> dataTableView;
     @FXML private Button fileSaveButton;
+    @FXML private ColorPicker colorPicker;
     /**
      * this method is executed at initialize of the controller
      * this is made auto
@@ -121,6 +125,13 @@ public class Controller {
         Window theStage = source.getScene().getWindow();
         FileChooser fileChooser = new FileChooser();
         fileChooser.showOpenDialog(theStage);
+    }
+
+    @FXML
+    private void handleColorPicker(ActionEvent ae) {
+        Node source = (Node) ae.getSource();
+        Window theStage = source.getScene().getWindow();
+        taskLabel.setTextFill(colorPicker.getValue());
     }
 
 }
