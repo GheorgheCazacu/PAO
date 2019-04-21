@@ -44,6 +44,7 @@
                       <TableColumn prefWidth="75.0" text="C2" />
                     </columns>
                   </TableView>
+                  <Button fx:id="fileSaveButton" layoutX="13.0" layoutY="86.0" mnemonicParsing="false" onAction="#handleSourceBrowse" text="File save" />
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">

@@ -5,11 +5,18 @@ import com.fmi.laborator09.fx.services.UserService;
 import javafx.collections.FXCollections;
 import javafx.concurrent.Task;
 import javafx.concurrent.WorkerStateEvent;
+import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.FileChooser;
+import javafx.stage.Window;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -21,7 +28,7 @@ public class Controller {
     @FXML private Button performTaskButton;
     @FXML private Label taskLabel;
     @FXML private TableView<User> dataTableView;
-
+    @FXML private Button fileSaveButton;
     /**
      * this method is executed at initialize of the controller
      * this is made auto
@@ -47,9 +54,10 @@ public class Controller {
         dataTableView.getColumns().addAll(userIdColumn, userUsernameColumn, userNameColumn, userDateOfBirthColumn);
 
     }
-
-    public void performTask() {
+    @FXML
+    public void performTask(ActionEvent ae) {
         System.out.println("start performing a task");
+        System.out.println("ae: " + ae);
 
         // prepare a task to be executed in parallel
         Task<List<User>> usersTasks = new Task<List<User>>() {
@@ -69,7 +77,7 @@ public class Controller {
                     counter++;
                     result.add(user);
                     // update the interface with the progress
-                    updateMessage("another user comme in the picture: " + user.getUsername() );
+                    updateMessage("another user come in the picture: " + user.getUsername() );
                     updateProgress(counter, maxUsers);
                     updateValue(result);
                     Thread.sleep(500);
@@ -107,5 +115,12 @@ public class Controller {
 
     }
 
+    @FXML
+    private void handleSourceBrowse(ActionEvent ae) {
+        Node source = (Node) ae.getSource();
+        Window theStage = source.getScene().getWindow();
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.showOpenDialog(theStage);
+    }
 
 }
