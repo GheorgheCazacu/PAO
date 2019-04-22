@@ -36,8 +36,10 @@ O alta optiune pentru baza de date este MySQL:
 https://dev.mysql.com/downloads/installer/.  
 pentru mySQL exista de asemenea un tool foarte util:  
 https://www.mysql.com/products/workbench/  
-
-
+un videoclip cu detalii de instalare pentru windows:  
+https://www.youtube.com/watch?v=JM3irQdQ9FQ&list=PLBxTciixhf4czvifN4kLpvtl21Ug8Xn-i&index=2&t=0s  
+  
+  
 Un alt tool foarte util este:  
 http://squirrel-sql.sourceforge.net  
 "veverita"
