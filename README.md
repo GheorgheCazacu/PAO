@@ -39,7 +39,16 @@ https://www.mysql.com/products/workbench/
 un videoclip cu detalii de instalare pentru windows:  
 https://www.youtube.com/watch?v=JM3irQdQ9FQ&list=PLBxTciixhf4czvifN4kLpvtl21Ug8Xn-i&index=2&t=0s  
   
+link driver jdbc pentru java  
+https://dev.mysql.com/downloads/connector/j/
   
 Un alt tool foarte util este:  
 http://squirrel-sql.sourceforge.net  
-"veverita"
+"veverita"  
+  
+exemple java swing dialog
+creare aplicatie swing cu menu
+https://www.youtube.com/watch?v=aww-tfv7Q9Q&list=PLBxTciixhf4czvifN4kLpvtl21Ug8Xn-i&index=4&t=0s  
+adaugare fereastra dialog  
+https://www.youtube.com/watch?v=bJHxHZL5xB0  
+adaugare "infrumusetare", tabel la fereastra principala  
