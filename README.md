@@ -52,3 +52,14 @@ https://www.youtube.com/watch?v=aww-tfv7Q9Q&list=PLBxTciixhf4czvifN4kLpvtl21Ug8X
 adaugare fereastra dialog  
 https://www.youtube.com/watch?v=bJHxHZL5xB0  
 adaugare "infrumusetare", tabel la fereastra principala  
+https://www.youtube.com/watch?v=hzIxeES9kxw&feature=youtu.be  
+  
+  
+ex. fereastra-de-dialog, este un exemplu swing cu meniu o fereastra de dialog si un tabel,  
+povestea se regaseste in clipurile de mai sus
+  
+ex. test-mysql-db este un exemplu de acces la o baza de date  
+tutorial video  
+https://www.youtube.com/watch?v=HLOnnXluOv8&feature=youtu.be  
+  
+  
