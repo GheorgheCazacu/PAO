@@ -62,4 +62,6 @@ ex. test-mysql-db este un exemplu de acces la o baza de date
 tutorial video  
 https://www.youtube.com/watch?v=HLOnnXluOv8&feature=youtu.be  
   
+# Evaluari  
+https://drive.google.com/open?id=1ocVwPDNWO7wIrUbycSbu1mQdVgZvOipE  
   
